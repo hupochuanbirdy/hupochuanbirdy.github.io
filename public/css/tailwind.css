@@ -1111,6 +1111,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
   height: 70%;
   top: 50%;
+  overflow: auto;
   transform: translateY(-50%);
   font-size: 50px;
   font-weight: 400;
