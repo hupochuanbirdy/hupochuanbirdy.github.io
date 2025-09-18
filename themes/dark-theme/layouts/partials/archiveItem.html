@@ -1,0 +1,47 @@
+{{ $cover := site.Params.Cover}}
+{{ if .context.Params.cover }}
+{{ $cover = .context.Params.cover.image }}
+{{ end }}
+
+
+<div class=" row-anchor ">
+    <!--    {{ if ne $cover "null" }}-->
+    <!--        <div style="height: 200px; width: 100%; overflow: hidden;">-->
+    <!--            <img style="height: 100%; width: 100%; object-fit: cover;" src="{{ $cover }}" srcset="{{ $cover }}" aria-hidden="true" alt="">-->
+    <!--        </div>-->
+    <!--    {{ end }}-->
+    <div class="item__content">
+
+        <a href="{{.context.Permalink }}" aria-label="{{ .context.Title }}">
+
+            <h3 class="item__headline ">
+                {{ .context.Title | truncate 100 "..." }}
+            </h3>
+        </a>
+
+        {{ if .context.Params.tags }}
+        {{ range first 3 .context.Params.tags }}
+        <p class="item__category category_update">
+            {{.}}
+        </p>
+        {{ end }}
+        {{ end }}
+        {{ if ne .context.Description "null" }}
+        <a href="{{.context.Permalink }}" aria-label="{{ .context.Title }}">
+
+            <div class="item__desc">
+                {{ .context.Description | truncate 150 "..." }}
+
+            </div>
+
+        </a>
+        {{ end }}
+
+        <div class="item__date">
+            {{ .context.Date | time.Format ":date_long" }}
+        </div>
+
+
+    </div>
+
+</div>

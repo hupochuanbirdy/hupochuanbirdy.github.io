@@ -1,0 +1,87 @@
+<div class="music-player-container ">
+    <div class="album-art">
+        <img src="https://hupo-common.s3.ap-northeast-2.amazonaws.com/music_cover.jpg" alt="Album Art">
+        <div class="favorite-icon">❤️</div>
+    </div>
+    <div class="text-center">
+        <h2>Deja Vu</h2>
+        <p>Summer Salt</p>
+    </div>
+    <div class="progress-container">
+        <span class="current-time">0:00</span>
+        <input type="range" class="progress-bar" min="0" max="100" value="0">
+        <span class="duration">0:00</span>
+    </div>
+    <div class="controls">
+        <button class="control-btn play-btn" id="play-pause">▶</button>
+    </div>
+    <audio id="audio-player" src="https://hupo-common.s3.ap-northeast-2.amazonaws.com/music.mp3"></audio>
+
+</div>
+
+<link rel="stylesheet" href="{{ "css/music-player.css" | relURL }}">
+
+
+<script>
+    const audio = document.getElementById('audio-player');
+    const playPauseBtn = document.getElementById('play-pause');
+    const progressBar = document.querySelector('.progress-bar');
+    const currentTimeEl = document.querySelector('.current-time');
+    const durationEl = document.querySelector('.duration');
+
+    let isPlaying = false;
+    // Auto-play the audio when the page loads
+    window.onload = () => {
+        audio.play().then(() => {
+            playPauseBtn.textContent = '⏸'; // Set button to pause
+            isPlaying = true;
+        }).catch(error => {
+            console.log("Auto-play blocked by browser:", error);
+        });
+    };
+
+    // Play or P
+    // Play or Pause the audio
+    playPauseBtn.addEventListener('click', () => {
+        if (isPlaying) {
+            audio.pause();
+            playPauseBtn.textContent = '▶'; // Switch to play icon
+        } else {
+            audio.play();
+            playPauseBtn.textContent = '⏸'; // Switch to pause icon
+        }
+        isPlaying = !isPlaying;
+    });
+
+    // Update the progress bar and time
+    audio.addEventListener('timeupdate', () => {
+        const currentTime = audio.currentTime;
+        const duration = audio.duration;
+
+        // Update the progress bar
+        progressBar.value = (currentTime / duration) * 100;
+
+        // Update time display
+        currentTimeEl.textContent = formatTime(currentTime);
+        durationEl.textContent = formatTime(duration);
+    });
+
+    // Seek audio when progress bar is adjusted
+    progressBar.addEventListener('input', () => {
+        const duration = audio.duration;
+        audio.currentTime = (progressBar.value / 100) * duration;
+    });
+
+    // Load metadata and update duration
+    audio.addEventListener('loadedmetadata', () => {
+        durationEl.textContent = formatTime(audio.duration);
+    });
+
+    // Format time in MM:SS
+    function formatTime(seconds) {
+        const minutes = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+    }
+
+</script>

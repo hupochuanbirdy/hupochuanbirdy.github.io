@@ -1,0 +1,36 @@
+<script src="/js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/particles.min.js"></script>
+<script src="/js/typed/typed.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+<script src="/js/main.js?v=2"></script>
+<script src="/js/testdd.js?v=1"></script>
+
+<!-- layouts/partials/scripts.html -->
+<!-- layouts/partials/scripts.html -->
+<script>
+    function toggleTheme() {
+      const currentTheme = localStorage.getItem('theme') || 'light';
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateIcon(newTheme);
+    }
+  
+    function updateIcon(theme) {
+      const themeSwitch = document.getElementById('theme-switch');
+      if (theme === 'dark') {
+        themeSwitch.checked = true;
+      } else {
+        themeSwitch.checked = false;
+      }
+    }
+  
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      updateIcon(savedTheme);
+    });
+  </script>
+  

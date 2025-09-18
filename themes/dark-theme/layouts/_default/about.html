@@ -1,0 +1,105 @@
+{{- define "main" }}
+
+<section class="s:mt-10" id="about">
+    <div class="container">
+        <div class="w-full ">
+            <blockquote>
+                <p>孤独不会因为Ta人的陪伴而消失。你最终会明白，你不需要Ta人的陪伴，现实生活是治愈孤独的良药。</p>
+
+                <p>Loneliness will not disappear because of the company of others. You will eventually understand that
+                    you do not need the company of others; real life is the cure for loneliness.</p>
+            </blockquote>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-8 sm:my-14">
+            <!-- Photo -->
+            <div class="sm:w-2/5 sm:mt-10">
+
+
+                <img class="aboutImage" src="{{ $.Site.Params.aboutImage }}">
+                <ul>
+                    <li><i class="fa-solid fa-chevron-right"></i><strong>Birthday:</strong>
+                        <span>Last century 1997</span></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><strong>Website:</strong>
+                        <span>{{ $.Site.BaseURL }}</span></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><strong>City:</strong> <span>Dublin Ireland</span></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><strong>Age:</strong> <span>26</span></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><strong>Gender:</strong> <span>Woman</span></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><strong>Degree:</strong> <span>Master</span></li>
+                    <li><i class="fa-solid fa-chevron-right"></i>
+                        <strong>Hobby:</strong>
+                    </li>
+                    <div>Hiking,
+                        Kendo (Kendo) Level 1 (future and examination section), badminton, swimming, orienteering, good
+                        at sports
+                        . Lover of speculative fiction, big Conan fan. Photography, editing, photoshop.
+                    </div>
+                </ul>
+            </div>
+
+            <div class="w-full sm:w-3/5 sm:mt-10">
+
+                <h3>Java Developer &amp; Orienteering Athlete.🌈 </h3>
+                <p class="fst-italic">
+                    This blog was rebuilt in 2021 after the original address expired and its resources were emptied.
+                    Now, I have freed up time to organize and gradually restore it.
+                <div class="row resume">
+                    <div class="col-lg-12">
+                        <div class="resume-item">
+                            <h4>2024 - </h4>
+                            <div class="flex justify-between">
+                                <h5>Flutter Developer</h5>
+                                <p><em> Dublin, Ireland</em></p>
+                            </div>
+                            <p>As an entry-level full-stack Developer</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>2023 - 2024</h4>
+                            <div class="flex justify-between">
+                                <h5>Java Developer</h5>
+                                <p><em> Dublin, Ireland</em></p>
+                            </div>
+                            <p>As a graduated Java Developer</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>2021 - 2022</h4>
+                            <div class="flex justify-between">
+                                <h5>Master of Computer Science &amp; UCC</h5>
+                                <p><em>Cork, Ireland</em></p>
+                            </div>
+                            <p>First class honours(1.1) </p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>2020 - 2021</h4>
+                            <div class="flex justify-between">
+                                <h5>Junior Full Stack Developer</h5>
+                                <p><em>ShenZhen, China</em></p>
+                            </div>
+                            <p>IoT company</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>2020</h4>
+                            <div class="flex justify-between">
+                                <h5>Network Engineering &amp; Bachelor degree</h5>
+                                <p><em> China</em></p>
+                            </div>
+                        </div>
+                        <div class="resume-item">
+                            <h4>2017-2019</h4>
+                            <p>Founded Sudoku Club and served as its first president</p>
+                            <p>Sudoku Club website established (but now abandoned due to lack of maintenance)</p>
+                            <p>Faculty of Computing Science Orienteering Team Leader</p>
+                            <p>Orienteering Crew, Guangdong University Orienteering Tournament 1st</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+
+{{- end }}

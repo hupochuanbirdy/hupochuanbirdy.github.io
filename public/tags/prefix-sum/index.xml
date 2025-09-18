@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prefix Sum on tothemoon&#39;s blog</title>
+    <link>https://hupochuanbird.github.io/tags/prefix-sum/</link>
+    <description>Recent content in Prefix Sum on tothemoon&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Sun, 01 Dec 2024 19:58:00 +0000</lastBuildDate>
+    <atom:link href="https://hupochuanbird.github.io/tags/prefix-sum/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maximum Sum of an Hourglass</title>
+      <link>https://hupochuanbird.github.io/posts/maximum-sum-of-an-hourglass/</link>
+      <pubDate>Sun, 01 Dec 2024 19:58:00 +0000</pubDate>
+      <guid>https://hupochuanbird.github.io/posts/maximum-sum-of-an-hourglass/</guid>
+      <description>&lt;h1 id=&#34;2428maximum-sum-of-an-hourglass-medium&#34;&gt;【2428】Maximum Sum of an Hourglass &lt;font size=&#34;3&#34; color=&#34;#FF5733&#34;&gt;Medium&lt;/font&gt;&lt;/h1&gt;&#xA;&lt;p&gt;You are given an &lt;code&gt;m x n&lt;/code&gt; integer matrix &lt;code&gt;grid&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;We define an &lt;strong&gt;hourglass&lt;/strong&gt; as a part of the matrix with the following form:&lt;/p&gt;&#xA;&lt;div class=&#34;polaroid&#34;&gt;&#xA;    &lt;a&#xA;         data-fancybox=&#34;gallery&#34;&#xA;         data-src=&#34;https://assets.leetcode.com/uploads/2022/08/21/img.jpg&#34;&gt;&#xA;        &lt;img src=&#34;https://assets.leetcode.com/uploads/2022/08/21/img.jpg&#34; /&gt;&#xA;    &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;Return &lt;em&gt;the &lt;strong&gt;maximum&lt;/strong&gt; sum of the elements of an hourglass&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; that an hourglass cannot be rotated and must be entirely contained within the matrix.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;polaroid&#34;&gt;&#xA;    &lt;a&#xA;         data-fancybox=&#34;gallery&#34;&#xA;         data-src=&#34;https://assets.leetcode.com/uploads/2022/08/21/1.jpg&#34;&gt;&#xA;        &lt;img src=&#34;https://assets.leetcode.com/uploads/2022/08/21/1.jpg&#34; /&gt;&#xA;    &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;component-content pagebody component code&#34;&gt;&#xA;  &#xA;  &#xA;  &#xA;  &lt;pre&gt;&lt;code class=&#34;&#34;&gt;Input: grid = [[6,2,1,3],[4,2,1,5],[9,2,8,7],[4,1,2,9]]&#xA;Output: 30&#xA;Explanation: The cells shown above represent the hourglass with the maximum sum: 6 &amp;#43; 2 &amp;#43; 1 &amp;#43; 2 &amp;#43; 9 &amp;#43; 2 &amp;#43; 8 = 30.&lt;/code&gt;&lt;/pre&gt;&#xA;  &#xA;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

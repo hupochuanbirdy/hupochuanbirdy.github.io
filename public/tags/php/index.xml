@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PHP on tothemoon&#39;s blog</title>
+    <link>https://hupochuanbird.github.io/tags/php/</link>
+    <description>Recent content in PHP on tothemoon&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Sun, 11 Feb 2024 19:24:37 +0000</lastBuildDate>
+    <atom:link href="https://hupochuanbird.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ubuntu 22.04.3: Chinese Search in Flarum and How to fix &#39;PHP Notice: fwrite(): send failed with errno=32 Broken pipe&#39; error in my case</title>
+      <link>https://hupochuanbird.github.io/posts/chinese-search-in-flarum/</link>
+      <pubDate>Sun, 11 Feb 2024 19:24:37 +0000</pubDate>
+      <guid>https://hupochuanbird.github.io/posts/chinese-search-in-flarum/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;The main content of this article is to use the Sonic engine to enable Flarum to search Chinese as well.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;In my Flarum, the search module isn&amp;rsquo;t perfect enough so far, almost all the discussions are using Chinese, so the default search module doesn&amp;rsquo;t work. Here, in this section, I primarily focus on utilizing the Sonic extension to implement Chinese text search. In my case, the server-side encounters some errors. I will list how I can debug and fix them.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

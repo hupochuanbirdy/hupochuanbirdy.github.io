@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Travel on tothemoon&#39;s blog</title>
+    <link>https://hupochuanbird.github.io/categories/travel/</link>
+    <description>Recent content in Travel on tothemoon&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Fri, 10 Jan 2025 16:27:43 +0000</lastBuildDate>
+    <atom:link href="https://hupochuanbird.github.io/categories/travel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Galway 2024 Xmas</title>
+      <link>https://hupochuanbird.github.io/gallery/galway-2024-xmas/</link>
+      <pubDate>Fri, 10 Jan 2025 16:27:43 +0000</pubDate>
+      <guid>https://hupochuanbird.github.io/gallery/galway-2024-xmas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dublin Mountain</title>
+      <link>https://hupochuanbird.github.io/gallery/dublin-mountain/</link>
+      <pubDate>Tue, 09 Jul 2024 10:01:42 +0100</pubDate>
+      <guid>https://hupochuanbird.github.io/gallery/dublin-mountain/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dublin Howth</title>
+      <link>https://hupochuanbird.github.io/gallery/dublin-howth/</link>
+      <pubDate>Sun, 16 Jun 2024 10:13:14 +0100</pubDate>
+      <guid>https://hupochuanbird.github.io/gallery/dublin-howth/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

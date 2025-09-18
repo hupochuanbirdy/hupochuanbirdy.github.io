@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Usb Deivces on tothemoon&#39;s blog</title>
+    <link>https://hupochuanbird.github.io/tags/usb-deivces/</link>
+    <description>Recent content in Usb Deivces on tothemoon&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Thu, 28 Aug 2025 16:21:25 +0100</lastBuildDate>
+    <atom:link href="https://hupochuanbird.github.io/tags/usb-deivces/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to read Data from USB CallerID deivce in Flutter</title>
+      <link>https://hupochuanbird.github.io/posts/callerid_flutter/</link>
+      <pubDate>Thu, 28 Aug 2025 16:21:25 +0100</pubDate>
+      <guid>https://hupochuanbird.github.io/posts/callerid_flutter/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;In the restaurant ordering scenario, phone orders are still quite common (though to be honest, I personally think this approach feels pretty traditional, even a bit outdated). When a restaurant takes a call, the staff usually has to ask for the phone number, address, and name, then manually type everything into the system. This process is not only slow but also prone to mistakes.&lt;/p&gt;&#xA;&lt;p&gt;If we could recognize the phone number right when the call comes in, and directly match it with the customer’s past information (like delivery address or frequently ordered dishes), we could save a lot of repetitive work. That’s exactly what I’m trying to do here: integrate a CallerID device into a Flutter app. When a customer calls, the system instantly recognizes the number, and if the customer already exists in the database, their info pops up automatically—no manual input needed.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

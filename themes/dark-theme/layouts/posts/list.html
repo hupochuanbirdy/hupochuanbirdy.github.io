@@ -1,0 +1,47 @@
+{{- define "main" }}
+<section class="s:mt-10">
+    <div class="container sm:my-14">
+        <div class="mt-20">
+            {{ partial "search-form.html" . }}
+
+        </div>
+        <ul id="results">
+            <li>
+                Enter a keyword above to search this site.
+            </li>
+        </ul>
+
+        <div class="flex flex-col sm:flex-row ">
+
+            <div class="w-full sm:w-10 sm:mt-10">
+                {{ $posts := where .Site.RegularPages "Section" "posts" }}
+                {{ $paginatedPosts := .Paginate ($posts.GroupByDate "2006-01") }}
+
+                {{ range $paginatedPosts.PageGroups }}
+                <div class="result " role="group">
+                    <!-- add day manually to parse as date-->
+                    {{ $month := printf "%s%s" .Key "-01"}}
+                    <h2 class="result__title" style="color: #4476ed">{{ $month | time.Format "January 2006" }}
+                        <sup class="archive-count" style="color: #e36938">&nbsp;{{ len .Pages }}</sup>
+                    </h2>
+
+
+                    <div>
+                        {{ range .Pages }}
+
+
+                        {{ partial "archiveItem.html" (dict "context" .) }}
+
+                        {{ end }}
+                    </div>
+
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+
+    {{ partial "components/pagination.html" . }}
+
+</section>
+{{- end }}

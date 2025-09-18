@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Taxonomy on tothemoon&#39;s blog</title>
+    <link>https://hupochuanbird.github.io/tags/taxonomy/</link>
+    <description>Recent content in Taxonomy on tothemoon&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Sat, 11 Mar 2023 11:53:09 +0000</lastBuildDate>
+    <atom:link href="https://hupochuanbird.github.io/tags/taxonomy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Taxonomy</title>
+      <link>https://hupochuanbird.github.io/posts/whats-the-taxonomy/</link>
+      <pubDate>Sat, 11 Mar 2023 11:53:09 +0000</pubDate>
+      <guid>https://hupochuanbird.github.io/posts/whats-the-taxonomy/</guid>
+      <description>&lt;h2 id=&#34;-whats-the-taxonomy&#34;&gt;👀 What&amp;rsquo;s the Taxonomy?&lt;/h2&gt;&#xA;&lt;p&gt;In Hugo, a taxonomy is a way of organizing your content based on specific attributes or categories. Taxonomies are used to create grouping mechanisms for your content, allowing you to easily organize, sort, and filter your pages based on common characteristics.&lt;/p&gt;&#xA;&lt;p&gt;Hugo supports several types of taxonomies, including:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Tags: A list of keywords or phrases that describe the content of a page. Tags are typically used to group related content together, regardless of the page&amp;rsquo;s location or content type.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Namecheap on tothemoon&#39;s blog</title>
+    <link>https://hupochuanbird.github.io/tags/namecheap/</link>
+    <description>Recent content in Namecheap on tothemoon&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Wed, 17 Sep 2025 09:26:31 +0100</lastBuildDate>
+    <atom:link href="https://hupochuanbird.github.io/tags/namecheap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSL Configration in Ec2 Namecheap</title>
+      <link>https://hupochuanbird.github.io/posts/ssl-config-in-ec2-namecheap/</link>
+      <pubDate>Fri, 13 Sep 2024 09:26:31 +0100</pubDate>
+      <guid>https://hupochuanbird.github.io/posts/ssl-config-in-ec2-namecheap/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;In this section, I will show you how to config the SSL in Namecheap and AWS EC2.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Buy a domain name&lt;/li&gt;&#xA;&lt;li&gt;Buy a SSL certificate&lt;/li&gt;&#xA;&lt;li&gt;Generate a key and csr file&lt;/li&gt;&#xA;&lt;li&gt;Config the SSL in Namecheap&lt;/li&gt;&#xA;&lt;li&gt;Config the SSL in AWS EC2 ubuntu&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;buy-a-domain-name&#34;&gt;Buy a domain name&lt;/h2&gt;&#xA;&lt;p&gt;Go to &lt;a href=&#34;https://www.namecheap.com/&#34;&gt;Namecheap&lt;/a&gt; and buy a domain name.&lt;/p&gt;&#xA;&lt;h2 id=&#34;buy-a-ssl-certificate&#34;&gt;Buy a SSL certificate&lt;/h2&gt;&#xA;&lt;p&gt;Go to Dashboard -&amp;gt; SSL Certificates -&amp;gt; Buy SSL Certificates.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

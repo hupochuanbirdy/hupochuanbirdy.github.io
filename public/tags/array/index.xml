@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Array on tothemoon&#39;s blog</title>
+    <link>https://hupochuanbird.github.io/tags/array/</link>
+    <description>Recent content in Array on tothemoon&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Sun, 01 Dec 2024 19:58:00 +0000</lastBuildDate>
+    <atom:link href="https://hupochuanbird.github.io/tags/array/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maximum Sum of an Hourglass</title>
+      <link>https://hupochuanbird.github.io/posts/maximum-sum-of-an-hourglass/</link>
+      <pubDate>Sun, 01 Dec 2024 19:58:00 +0000</pubDate>
+      <guid>https://hupochuanbird.github.io/posts/maximum-sum-of-an-hourglass/</guid>
+      <description>&lt;h1 id=&#34;2428maximum-sum-of-an-hourglass-medium&#34;&gt;【2428】Maximum Sum of an Hourglass &lt;font size=&#34;3&#34; color=&#34;#FF5733&#34;&gt;Medium&lt;/font&gt;&lt;/h1&gt;&#xA;&lt;p&gt;You are given an &lt;code&gt;m x n&lt;/code&gt; integer matrix &lt;code&gt;grid&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;We define an &lt;strong&gt;hourglass&lt;/strong&gt; as a part of the matrix with the following form:&lt;/p&gt;&#xA;&lt;div class=&#34;polaroid&#34;&gt;&#xA;    &lt;a&#xA;         data-fancybox=&#34;gallery&#34;&#xA;         data-src=&#34;https://assets.leetcode.com/uploads/2022/08/21/img.jpg&#34;&gt;&#xA;        &lt;img src=&#34;https://assets.leetcode.com/uploads/2022/08/21/img.jpg&#34; /&gt;&#xA;    &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;Return &lt;em&gt;the &lt;strong&gt;maximum&lt;/strong&gt; sum of the elements of an hourglass&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; that an hourglass cannot be rotated and must be entirely contained within the matrix.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;polaroid&#34;&gt;&#xA;    &lt;a&#xA;         data-fancybox=&#34;gallery&#34;&#xA;         data-src=&#34;https://assets.leetcode.com/uploads/2022/08/21/1.jpg&#34;&gt;&#xA;        &lt;img src=&#34;https://assets.leetcode.com/uploads/2022/08/21/1.jpg&#34; /&gt;&#xA;    &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;component-content pagebody component code&#34;&gt;&#xA;  &#xA;  &#xA;  &#xA;  &lt;pre&gt;&lt;code class=&#34;&#34;&gt;Input: grid = [[6,2,1,3],[4,2,1,5],[9,2,8,7],[4,1,2,9]]&#xA;Output: 30&#xA;Explanation: The cells shown above represent the hourglass with the maximum sum: 6 &amp;#43; 2 &amp;#43; 1 &amp;#43; 2 &amp;#43; 9 &amp;#43; 2 &amp;#43; 8 = 30.&lt;/code&gt;&lt;/pre&gt;&#xA;  &#xA;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Find Players With Zero or One Losses</title>
+      <link>https://hupochuanbird.github.io/posts/find-players-with-zero-or-one-losses/</link>
+      <pubDate>Sun, 01 Dec 2024 19:55:32 +0000</pubDate>
+      <guid>https://hupochuanbird.github.io/posts/find-players-with-zero-or-one-losses/</guid>
+      <description>&lt;h1 id=&#34;2225find-players-with-zero-or-one-losses-medium&#34;&gt;【2225】Find Players With Zero or One Losses &lt;font size=&#34;3&#34; color=&#34;#FF5733&#34;&gt;Medium&lt;/font&gt;&lt;/h1&gt;&#xA;&lt;p&gt;You are given an integer array &lt;code&gt;matches&lt;/code&gt; where &lt;code&gt;matches[i] = [winneri, loseri]&lt;/code&gt; indicates that the player &lt;code&gt;winneri&lt;/code&gt; defeated player &lt;code&gt;loseri&lt;/code&gt; in a match.&lt;/p&gt;&#xA;&lt;p&gt;Return &lt;em&gt;a list&lt;/em&gt; &lt;code&gt;answer&lt;/code&gt; &lt;em&gt;of size&lt;/em&gt; &lt;code&gt;2&lt;/code&gt; &lt;em&gt;where:&lt;/em&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;answer[0]&lt;/code&gt; is a list of all players that have &lt;strong&gt;not&lt;/strong&gt; lost any matches.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;answer[1]&lt;/code&gt; is a list of all players that have lost exactly &lt;strong&gt;one&lt;/strong&gt; match.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The values in the two lists should be returned in &lt;strong&gt;increasing&lt;/strong&gt; order.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Check if Every Row and Column Contains All Numbers</title>
+      <link>https://hupochuanbird.github.io/posts/leetcode-checkifrccontainsallnumber/</link>
+      <pubDate>Sun, 01 Dec 2024 19:46:08 +0000</pubDate>
+      <guid>https://hupochuanbird.github.io/posts/leetcode-checkifrccontainsallnumber/</guid>
+      <description>&lt;h2 id=&#34;-2133check-if-every-row-and-column-contains-all-numbers--easy&#34;&gt;💙 【2133】Check if Every Row and Column Contains All Numbers  &lt;font size=&#34;3&#34; color=&#34;#4FE915&#34;&gt;easy&lt;/font&gt;&lt;/h2&gt;&#xA;&lt;p&gt;An &lt;code&gt;n x n&lt;/code&gt; matrix is &lt;strong&gt;valid&lt;/strong&gt; if every row and every column contains &lt;strong&gt;all&lt;/strong&gt; the integers from &lt;code&gt;1&lt;/code&gt; to &lt;code&gt;n&lt;/code&gt; (&lt;strong&gt;inclusive&lt;/strong&gt;).&lt;/p&gt;&#xA;&lt;p&gt;Given an &lt;code&gt;n x n&lt;/code&gt; integer matrix &lt;code&gt;matrix&lt;/code&gt;, return &lt;code&gt;true&lt;/code&gt; &lt;em&gt;if the matrix is &lt;strong&gt;valid&lt;/strong&gt;.&lt;/em&gt; Otherwise, return &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;polaroid&#34;&gt;&#xA;    &lt;a&#xA;         data-fancybox=&#34;gallery&#34;&#xA;         data-src=&#34;https://assets.leetcode.com/uploads/2021/12/21/example1drawio.png&#34;&gt;&#xA;        &lt;img src=&#34;https://assets.leetcode.com/uploads/2021/12/21/example1drawio.png&#34; /&gt;&#xA;    &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;component-content pagebody component code&#34;&gt;&#xA;  &#xA;  &#xA;  &#xA;  &lt;pre&gt;&lt;code class=&#34;&#34;&gt;Input: matrix = [[1,2,3],[3,1,2],[2,3,1]]&#xA;Output: true&#xA;Explanation: In this case, n = 3, and every row and column contains the numbers 1, 2, and 3.&#xA;Hence, we return true.&lt;/code&gt;&lt;/pre&gt;&#xA;  &#xA;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

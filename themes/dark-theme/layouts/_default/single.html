@@ -1,0 +1,289 @@
+{{- define "main" }}
+
+<style>
+  
+  html {
+  scroll-behavior: smooth;
+}
+html, body {
+    scroll-padding-top: 100px;
+}
+#page-section {
+    display: block;
+    word-wrap: break-word;
+}
+
+
+.blog-content {
+    padding-bottom: 3rem;
+}
+
+@media(min-width: 1024px) {
+    #page-section>aside {
+        margin-left:1rem;
+        border-left-width: 4px;
+        border-color: #ffb703
+    }
+
+    #page-section>aside.tableOfContentContainer {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 79px;
+        align-self: start
+    }
+
+    #page-section>aside>h3 {
+        font-size: 1rem;
+        padding-left: .5rem;
+        font-weight: 700;
+        padding-bottom: .5rem;
+        padding-top: 1rem
+    }
+
+    #page-section {
+        display: grid;
+        grid-template-columns: 100% 12em;
+        width: 80%
+    }
+
+    #TableOfContents {
+        display: block;
+        padding-left: .5rem;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+        color: var(--copyright-info-color)
+    }
+
+    #TableOfContents li {
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+        list-style: none;
+        font-size: small;
+    }
+
+    #TableOfContents li.active {
+        padding-left: 0
+    }
+
+    #TableOfContents li.active:before {
+        content: "→";
+        display: inline-block;
+        margin-left: -20px;
+        width: 20px
+    }
+
+    .cronweekly #TableOfContents ul {
+        margin-left: 1rem!important
+    }
+
+    #TableOfContents li {
+        margin-left: 1rem
+    }
+
+    #TableOfContents li.active>a {
+        color: var(--copyright-info-color);
+        font-weight: 700
+    }
+
+    #TableOfContents a {
+        text-decoration: none;
+        padding: .125rem 0;
+        color: rgb(142, 142, 142);
+        -webkit-transition: all 50ms ease-in-out;
+        transition: all 50ms ease-in-out
+    }
+
+    #TableOfContents a:hover,#TableOfContents a:focus,#TableOfContents a:active {
+        color: var(--primary-color)
+    }
+
+    #tableOfContentContainer ol,ul {
+      list-style: none;
+      margin: 0;
+      padding: 0
+    }
+}
+
+
+
+.content blockquote {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-left-width: 4px;
+    border-color: #ffb703;
+    font-style: italic;
+}
+
+.content a,.homepage-intro a,.link-dark {
+    border-bottom-width: 2px;
+    padding-bottom: .1rem;
+    padding-top: .1rem;
+    border-color: #ffb703
+}
+
+.link-talks-meta {
+    padding-bottom: .3rem!important;
+    margin-right: 1rem;
+    color: #718096;
+    font-size: 1rem
+}
+
+.link-dark {
+    border-color: #744210
+}
+
+.content a:hover,.homepage-intro a:hover,footer a:hover,.link-dark a:hover {
+    background-color: #f6e05e
+}
+
+.comments svg {
+    height: 2rem;
+    width: 2rem;
+    fill: currentColor;
+    display: inline-block;
+    margin: .5rem
+}
+
+.comments .share-links a {
+    border-width: 0;
+    background-color: #f7fafc;
+    display: inline-block;
+    border-color: #cbd5e0;
+    border-width: 1px;
+    margin-right: 1rem
+}
+
+.comments .share-links a:hover {
+    background-color: #edf2f7
+}
+
+.comments h3 {
+    border-bottom-width: 0!important;
+    display: block!important;
+    font-size: 1.875rem!important
+}
+
+.content h1,.content h2,.content h3 {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    border-bottom-width: 2px;
+    padding-bottom: 0;
+    border-color: #e2e8f0;
+    line-height: 2
+}
+
+.content h2 {
+    margin-bottom: .25rem
+}
+
+.content h3 {
+    font-size: 1.25rem
+}
+.polaroid{
+    display: flex;
+    justify-content: center;
+}
+
+.content img {
+    max-height: 500px;
+    width: 100%;
+    height: inherit;
+    display: block;
+    object-fit: cover;
+    border-radius: .25rem;
+    border-width: 1px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+}
+
+</style>
+<section class="s:mt-10">
+  <div class="w-screen max-w-full pt-20 header-curved  ">
+    <div class="container w-full md:max-w-4xl px-4 md:px-6 text-xl text-gray-800 leading-normal mx-auto">
+        <div class="pb-8">
+            <h1 class="font-thin break-normal leading-tight text-gray-900 pt-6 pb-4 text-4xl md:text-5xl">
+              {{ .Title }}
+            </h1>
+           
+        </div>
+      </div>
+    </div>
+        <div class="container w-full md:max-w-4xl mx-auto mt-8 ">
+          <div class="w-full px-4 md:px-6  text-gray-800 leading-normal">
+            <div class="page-metadata">
+              {{- partial "components/post_meta.html" . -}}
+            </div>
+            <mian id="page-section">
+              
+              <div class="content blog-content">
+                {{ with .Params.SubTitle }}
+                <h1 class="font-light text-gray-700 text-2xl md:text-3xl">
+                    {{ . }}
+                </h1>
+            {{ end }}
+                {{ with .Params.Description }}
+                <blockquote>
+                    {{ . }} 
+                </blockquote>
+               
+            {{ end }}
+              
+                {{ .Content }}
+              </div>
+             <aside class="hidden lg:block tableOfContentContainer" id="tableOfContentContainer">
+              <h3>Table of contents</h3>
+                
+              {{ .TableOfContents }}
+              </aside>
+            </mian>
+          </div>
+            
+      
+
+
+          <div class="my-14">
+            {{ partial "share-buttons.html" . }}
+
+          </div>
+
+          <div class="pagination">      
+            {{-  partial "components/paginator.html" . -}}
+          </div>
+          <div class="comment-block">      
+            {{-  partial "components/comment.html" . -}}
+          </div>
+        </div>
+
+    
+  </section>
+
+  <script>
+
+
+window.addEventListener('DOMContentLoaded', () => {
+        const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                const id = entry.target.getAttribute('id');
+                if (entry.intersectionRatio > 0) {
+                  clearActiveStatesInTableOfContents();
+                  document.querySelector(`aside nav li a[href="#${id}"]`).parentElement.classList.add('active');
+              }
+          });
+      });
+      document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
+          observerForTableOfContentActiveState.observe(section);
+      });
+
+    });
+
+    function clearActiveStatesInTableOfContents() {
+        document.querySelectorAll('aside nav li').forEach((section) => {
+            section.classList.remove('active');
+        });
+    }
+
+  </script>
+{{- end }}
+

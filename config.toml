@@ -1,0 +1,177 @@
+baseURL = 'https://hupochuanbird.github.io/'
+languageCode = 'en-us'
+title = "tothemoon's blog"
+theme = 'dark-theme'
+copyright = 'All rights reserved'
+
+
+
+
+# If false, English tags like `Getting Started` will be converted to `getting-started
+preserveTaxonomyNames = true
+# Automatically detects if Chinese/Japanese/Korean is included, this parameter affects the summary and word count functions and is recommended to be set to true
+hasCJKLanguage = false
+enableGitInfo = false
+
+# Pagination
+[pagination]
+pagerSize = 20
+path = "page"
+
+
+# enable Emoji; see emoji-cheat-sheet.com
+enableEmoji = false
+
+disqus_shortname = "https-amber916young-github-io"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+archive = "archives"
+series = "series"
+
+[services]
+[services.googleAnalytics]
+ID = 'G-C427NV2JKE'
+
+[permalinks]
+post = "/:year/:month/:title/"
+
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = ["lastmod", ":git", "date", "publishDate"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]
+
+[params.shareButtons]
+networks = ["email", "linkedin", "reddit"]
+size = "small"
+buttonMargin = "0.2em"
+icon = "solid"
+
+[params]
+keywords = "blog,life,code,desgin,woman in stem, yejia yang"
+author = "tothemoon"
+homepage = "tothemoon"
+email = "hupochuan007@gmail.com"
+avatar = "https://i.imgur.com/VCXHAI9.jpeg"
+authorAvatar = "https://hupo-common.s3.ap-northeast-2.amazonaws.com/W0FUuPX.jpeg"
+description = "Design by bird - A blog about life, code, design, and woman in STEM by tothemoon"
+aboutImage = "/images/about/my_profile.jpg"
+lunr = true
+hero = "/images/bg/bg2.jpg"
+social_image = "/images/bg/bg2.jpg"  
+
+#  [[params.gallery]]
+#      url   = "/images/bg/bg2.jpg"
+
+
+
+# Enable sitemap generation
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# SEO-friendly URLs
+[params.seo]
+  enable_twitter_cards = true
+  enable_open_graph = true
+  enable_schema = true
+
+[[params.social]]
+url = "https://www.instagram.com/tothemoonbird/"
+icon = "fa-brands fa-instagram fa-lg"
+[[params.social]]
+url = "https://leetcode.com/BirdyYang/"
+icon = "fa-solid fa-bug  fa-lg"
+[[params.social]]
+url = "https://www.linkedin.com/in/yejia-yang-11105722a/"
+icon = "fa-brands fa-linkedin fa-lg"
+[[params.social]]
+url = "https://github.com/Amber916Young/"
+icon = "fa-brands fa-github fa-lg"
+
+
+# allow md file shows HTML format
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+hardWraps = false
+xhtml = false
+[markup.highlight]
+    # noClasses = true
+    # style = "monokai"
+    # lineNos = true
+
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = true
+    style = "dracula"
+    tabWidth = 4
+# setup menu
+sectionPagesMenu = "main"
+[menu]
+[[menu.main]]
+name = "Home"
+pre = '<i class="fa-solid fa-house"></i>'
+url = "/"
+weight = 1
+[[menu.main]]
+name = "My Blog"
+pre = '<i class="fa-solid fa-paper-plane"></i>'
+url = "/posts/"
+identifier = "posts"
+weight = 2
+[[menu.main]]
+name = "My Life"
+pre = '<i class="fa-solid  fa-mountain-sun"></i>'
+url = "/gallery/"
+identifier = "gallery"
+weight = 2
+[[menu.main]]
+name = "Tags"
+pre = '<i class="fa-solid fa-tag"></i>'
+identifier = "tags"
+url = "/tags/"
+weight = 3
+[[menu.main]]
+name = "About"
+pre = '<i class="fa-solid fa-medal"></i>'
+identifier = "about"
+url = "/about/"
+weight = 4
+[[menu.main]]
+name = "Oxford"
+pre = '<i class="fa-solid fa-book"></i>'
+identifier = "oxford"
+url = "/oxford/"
+weight = 6
+# code block buil-in tool
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+
+
+[build]
+[build.buildStats]
+enable = true
+[[build.cachebusters]]
+source = 'assets/notwatching/hugo_stats\.json'
+target = 'css'
+[[build.cachebusters]]
+source = '(postcss|tailwind)\.config\.js'
+target = 'css'
+[module]
+[[module.mounts]]
+source = 'assets'
+target = 'assets'
+[[module.mounts]]
+disableWatch = true
+source = 'hugo_stats.json'
+target = 'assets/notwatching/hugo_stats.json'
+

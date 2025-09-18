@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{- partial "head.html" . -}}
+    <body  >
+
+        <div id="popup"></div>
+        <div id="normal" >
+            {{ if eq .Params.Title  "Password"}}
+            {{- block "fullpage" .}}{{- end}}
+            {{ else}}
+            {{- partial "header.html" . -}}
+
+            {{ if .IsHome }} 
+
+
+            <main class="min-h-full" style=" margin-top: 0;" >
+                {{- block "main" .}}{{- end}}
+            </main>
+             {{ else }}
+             <main class="min-h-full"  >
+                {{- block "main" .}}{{- end}}
+            </main>
+             {{ end }}
+
+                {{- partial "footer.html" . -}}
+            {{ end}}
+        </div>
+
+       
+        {{- partial "footer-script.html" . -}}
+    </body>
+</html>

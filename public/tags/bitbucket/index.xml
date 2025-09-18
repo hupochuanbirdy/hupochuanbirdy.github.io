@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bitbucket on tothemoon&#39;s blog</title>
+    <link>https://hupochuanbird.github.io/tags/bitbucket/</link>
+    <description>Recent content in Bitbucket on tothemoon&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Fri, 01 Nov 2024 11:49:28 +0000</lastBuildDate>
+    <atom:link href="https://hupochuanbird.github.io/tags/bitbucket/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bitbucket Pipeline for Docker Image Deployment to AWS ECR</title>
+      <link>https://hupochuanbird.github.io/posts/bitbucket-pipeline-docker-image-in-aws-ecr/</link>
+      <pubDate>Fri, 01 Nov 2024 11:49:28 +0000</pubDate>
+      <guid>https://hupochuanbird.github.io/posts/bitbucket-pipeline-docker-image-in-aws-ecr/</guid>
+      <description>&lt;h2 id=&#34;diagram&#34;&gt;Diagram&lt;/h2&gt;&#xA;&lt;p&gt;The diagram illustrates a Bitbucket pipeline setup for deploying Docker images to AWS Elastic Container Registry (ECR).&lt;/p&gt;&#xA;&lt;div class=&#34;polaroid&#34; &gt;&#xA;   &lt;a data-fancybox=&#34;gallery&#34; data-src=&#34;https://hupo-posts.s3.ap-northeast-2.amazonaws.com/2024-11-01/pipeline-ecr-flow.png&#34;&gt;&#xA;        &lt;img src=&#34;https://hupo-posts.s3.ap-northeast-2.amazonaws.com/2024-11-01/pipeline-ecr-flow.png&#34;/&gt;&#xA;    &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Pipeline.yaml - Contains the Bitbucket pipeline configuration script, defining steps for building, testing, and deploying the Docker image.&lt;/li&gt;&#xA;&lt;li&gt;Dockerfile - Specifies the instructions for building the Docker image.&lt;/li&gt;&#xA;&lt;li&gt;Bitbucket - The repository where the source code and pipeline configuration reside.&lt;/li&gt;&#xA;&lt;li&gt;Bitbucket Pipeline - Executes the pipeline steps as defined in Pipeline.yaml.&lt;/li&gt;&#xA;&lt;li&gt;AWS ECR - The target registry where the Docker image is pushed and stored after deployment.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;create-a-repo-in-aws-ecr&#34;&gt;Create a Repo in AWS ECR&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Navigate to AWS ECR&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;polaroid&#34; &gt;&#xA;   &lt;a data-fancybox=&#34;gallery&#34; data-src=&#34;https://hupo-posts.s3.ap-northeast-2.amazonaws.com/2024-11-01/aws_ecr.png&#34;&gt;&#xA;        &lt;img src=&#34;https://hupo-posts.s3.ap-northeast-2.amazonaws.com/2024-11-01/aws_ecr.png&#34;/&gt;&#xA;    &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;Create a repository&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;polaroid&#34; &gt;&#xA;   &lt;a data-fancybox=&#34;gallery&#34; data-src=&#34;https://hupo-posts.s3.ap-northeast-2.amazonaws.com/2024-11-01/aws_ecr_create_repo.png&#34;&gt;&#xA;        &lt;img src=&#34;https://hupo-posts.s3.ap-northeast-2.amazonaws.com/2024-11-01/aws_ecr_create_repo.png&#34;/&gt;&#xA;    &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;ol start=&#34;3&#34;&gt;&#xA;&lt;li&gt;Memorise the URI(need set permission for this repo)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;polaroid&#34; &gt;&#xA;   &lt;a data-fancybox=&#34;gallery&#34; data-src=&#34;https://hupo-posts.s3.ap-northeast-2.amazonaws.com/2024-11-01/aws_ecr_repo_list.png&#34;&gt;&#xA;        &lt;img src=&#34;https://hupo-posts.s3.ap-northeast-2.amazonaws.com/2024-11-01/aws_ecr_repo_list.png&#34;/&gt;&#xA;    &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;create-a-docker-image-which-contains-all-the-env-your-project-needed&#34;&gt;Create a docker image which contains all the env your project needed&lt;/h2&gt;&#xA;&lt;p&gt;In my case, the environment I need includes Python 3.10.3, along with the packages boto3 (for AWS), os, json, and yaml.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

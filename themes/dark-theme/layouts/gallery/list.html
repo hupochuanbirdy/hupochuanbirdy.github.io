@@ -1,0 +1,50 @@
+{{- define "main" }}
+<section class="s:mt-10" id="about">
+    <div class="container">
+      <div class="w-full " >
+        <blockquote>
+          <p>幸福等于现实减去期望。</p>
+          <p>Happiness equals reality minus expectations.</p>
+      </blockquote>
+      </div>
+
+      <div class="w-full " >
+        <div class="gallery-wrapper">   
+
+            <!-- {{ $pages := .Site.GetPage "section" "gallery" }} -->
+            {{ $videos := where .Site.RegularPages "Section" "videos"  }}
+            {{ $gallery := where .Site.RegularPages "Section" "gallery"  }}
+            {{ $content := union $videos $gallery }}
+            {{ range $content }}
+                <div class="gallery-container" style="background-image: url('{{ .Params.image }}');">
+                    <div class="bottom-info">
+                        <a  href="{{.Permalink }}"  aria-label="{{ .Title }}">
+                            <h2 class="gallery-title">{{ .Title }}</h2>
+                        </a>
+                        <div class="gallery-info">
+                            <div class="circleAvatar">
+                                <img src="{{.Site.Params.authorAvatar}}">
+                            </div>
+                            <div style="margin-left: 15px;">
+                                <div class="name">{{ .Params.author }}</div>
+                                <div class="pc">{{ .Params.Date | time.Format ":date_long"}}</div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+        
+            {{ end }}
+
+        
+        </div>
+
+
+
+
+
+      </div>
+
+      </div>
+  </section>
+{{- end }}

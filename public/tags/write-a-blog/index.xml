@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Write a Blog on tothemoon&#39;s blog</title>
+    <link>https://hupochuanbird.github.io/tags/write-a-blog/</link>
+    <description>Recent content in Write a Blog on tothemoon&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Sun, 19 Mar 2023 17:22:49 +0000</lastBuildDate>
+    <atom:link href="https://hupochuanbird.github.io/tags/write-a-blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Write a Blog in Hugo</title>
+      <link>https://hupochuanbird.github.io/posts/how-to-write-a-blog/</link>
+      <pubDate>Sun, 19 Mar 2023 17:22:49 +0000</pubDate>
+      <guid>https://hupochuanbird.github.io/posts/how-to-write-a-blog/</guid>
+      <description>&lt;h2 id=&#34;how-to-write-a-blog-in-hugo&#34;&gt;How to Write a Blog in Hugo&lt;/h2&gt;&#xA;&lt;p&gt;In hugo, the blogs/articles/posts all store in the content/posts/ folder.&lt;/p&gt;&#xA;&lt;div class=&#34;polaroid&#34; style=&#34;width:20%&#34; &gt;&#xA;   &lt;a data-fancybox=&#34;gallery&#34; data-src=&#34;https://i.328888.xyz/2023/03/20/PU83L.png&#34;&gt;&#xA;        &lt;img src=&#34;https://i.328888.xyz/2023/03/20/PU83L.png&#34;/&gt;&#xA;    &lt;/a&gt;&#xA;  &lt;div class=&#34;container&#34;&gt;&#xA;    &lt;p&gt; Path of Posts folder &lt;/p&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&#xA;&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&#xA;&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2&#xA;&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3&#xA;&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new posts/xxxmd&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;# such as I create this post&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new posts/How-to-write-a-blog.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;# don&amp;#39;t use space in filename!!!&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&amp;ldquo;posts&amp;rdquo; means, create a md file under the posts folder(is also default blog folder)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

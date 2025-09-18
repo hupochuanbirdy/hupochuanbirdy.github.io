@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Format Date on tothemoon&#39;s blog</title>
+    <link>https://hupochuanbird.github.io/tags/format-date/</link>
+    <description>Recent content in Format Date on tothemoon&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Sun, 21 May 2023 09:59:17 +0100</lastBuildDate>
+    <atom:link href="https://hupochuanbird.github.io/tags/format-date/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Format Dates in Flutter</title>
+      <link>https://hupochuanbird.github.io/posts/format-dates-in-flutter/</link>
+      <pubDate>Sun, 21 May 2023 09:59:17 +0100</pubDate>
+      <guid>https://hupochuanbird.github.io/posts/format-dates-in-flutter/</guid>
+      <description>&lt;p&gt;The article from &lt;a href=&#34;https://www.geeksforgeeks.org/format-dates-in-flutter/&#34;&gt;geeksforgeeks&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;The Dart in-built method, for formatting, dates in Flutter according to the requirements is very limited and restrictive. While dealing with dates it should be in human-readable format but unfortunately, there’s no way of formatting dates in flutter unless you make use of a third-party package.&lt;/p&gt;&#xA;&lt;p&gt;In this article, we will look into one such package known as the intl package.&lt;/p&gt;&#xA;&lt;h2 id=&#34;intl-package&#34;&gt;intl package&lt;/h2&gt;&#xA;&lt;h3 id=&#34;using-intl-package&#34;&gt;Using intl package&lt;/h3&gt;&#xA;&lt;p&gt;Add the following dependencies to your pubspec.yaml file, you can find the latest dependencies here.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

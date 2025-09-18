@@ -1,0 +1,1 @@
+{"rule":"DT_RB_IN","sentence":"^\\QIf it prints the successfully, you are lucky\\E$"}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RDs on tothemoon&#39;s blog</title>
+    <link>https://hupochuanbird.github.io/tags/rds/</link>
+    <description>Recent content in RDs on tothemoon&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Sun, 13 Aug 2023 17:06:05 +0100</lastBuildDate>
+    <atom:link href="https://hupochuanbird.github.io/tags/rds/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flarum Connects to AWS RDs</title>
+      <link>https://hupochuanbird.github.io/posts/flarum-connects-to-aws-rds/</link>
+      <pubDate>Sun, 13 Aug 2023 17:06:05 +0100</pubDate>
+      <guid>https://hupochuanbird.github.io/posts/flarum-connects-to-aws-rds/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;For the majority tutorial, the flarum always connects with the localhost db directly. However, base on my knowledge, once the server shutdown or reboot, the data could be lost, also it&amp;rsquo;s not easy to debug(although flaurm has logs files to record all errors). So I suppose that separate db and flaurm server.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;In this section, I use AWS EC2 and RDs to implement my solution.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;For how to deploy the Flarum in EC2, I will write author article, but to be honest, it&amp;rsquo;s the common way for deploying to any other Linux server.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

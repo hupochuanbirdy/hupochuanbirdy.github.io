@@ -1,0 +1,58 @@
+<div class="sm:flex" style="    flex-wrap: wrap;">
+
+  {{- $pages := .pages -}}
+  {{ range first 6 $pages }}
+  <div class="  anime-card result__item" style="position: relative;">
+    <div class="flex flex-col h-full">
+      <div>
+
+        {{ if ne .Params.Cover.image "null" }}
+        <img src="{{.Params.Cover.image}}" alt="{{.Params.Cover.Alt}}"
+          class="border-top-radius fixed-height border-bottom-line">
+
+        {{ end }}
+        <div class=" p-10">
+
+          <div class="text-xl sm:text-xl two-line-title font-bold">
+
+            {{.Params.Title | truncate 50}}
+          </div>
+        </div>
+        {{ if .Params.tags }}
+        {{ range first 3 .Params.tags }}
+        <p class="item__category category_update">
+          {{.}}
+        </p>
+        {{ end }}
+        {{ end }}
+
+        <!--        <div class=" p-10">-->
+        <!--          <div class="text-base  three-line-title ">-->
+        <!--            {{ .Params.Description | truncate 80}}-->
+        <!--          </div>-->
+
+        <!--        </div>-->
+
+
+      </div>
+      <div class="spacer"></div>
+
+      <div class="flex justify-between items-center px-4">
+
+        <div class="item__date">
+          {{ .Params.Date | time.Format ":date_long" }}
+        </div>
+        <button type="button" onclick="window.location.href='{{.Permalink }}';"
+          class="brutalist-card__button brutalist-card__button--mark">
+          READ 👉
+        </button>
+
+      </div>
+
+
+    </div>
+  </div>
+  <div class="mb-6"></div>
+
+  {{ end }}
+</div>

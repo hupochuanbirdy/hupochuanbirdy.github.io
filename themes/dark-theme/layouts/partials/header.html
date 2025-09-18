@@ -1,0 +1,47 @@
+<header  >
+    <nav  id="top-nav"   class="trans-parent fixed z-10 w-full py-4 sm:py-6 ">
+      <div   id="menu" class="container flex flex-wrap items-center h-full">
+        <!-- Social icons-->
+        <div class="flex gap-4">
+          {{-  partial "components/socialshare.html" . -}}
+        </div>
+      
+
+
+        <!-- Links-->
+        <ul class=" hidden sm:flex flex-1 justify-end items-center gap-6 ">
+          {{-  partial "components/menu.html" . -}}
+        </ul>
+        <!-- Hamburger menu on mobile-->
+        <div class="flex sm:hidden flex-1 justify-end">
+          <button id="toggle" class="button_container">
+            <i class="fa-solid fa-bars"></i>           
+          </button>
+        </div>
+
+
+        <div class="theme-toggle">
+          <input type="checkbox" id="theme-switch" class="theme-switch-input" onclick="toggleTheme()">
+          <label for="theme-switch" class="theme-switch-label">
+            <span class="theme-switch-icon">
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-moon"></i>
+            </span>
+          </label>
+        </div>
+
+      </div>
+      <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+              {{-  partial "components/menu.html" . -}}
+            </ul>
+        </nav>
+      </div>
+    
+      
+      
+
+
+    </nav>
+  </header>

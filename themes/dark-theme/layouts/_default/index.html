@@ -1,0 +1,91 @@
+{{ define "main" }}
+<section>
+    <div id="background-carousel" class=" flex flex-col gap-12 justify-center items-center h-screen justify-center "
+         style="
+    background-size: cover; background-image: url('{{ $.Site.Params.hero }}');  background-repeat: no-repeat; background-attachment: fixed ">
+
+        <div>
+            <img class="aboutImage" src="{{ $.Site.Params.aboutImage }}">
+            <div class="mb-6"></div>
+            <div class="flex justify-center gap-4">
+
+                {{- partial "components/socialshare.html" . -}}
+            </div>
+            <h2>I'm a <span class="typed" style="color: #00cab5;"
+                            data-typed-items="{{ with .Params.typed_names }}{{ . }}{{ end }}"></span></h2>
+
+            <div class="mb-6"></div>
+            <div class="flex justify-center">
+                <a href="#mywork">
+                    <button type="button" class="brutalist-card__button brutalist-card__button--mark">
+                        See my work <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+
+<section id="mywork">
+    <div class="container">
+        <div class="sm:flex  justify-between ">
+            <div class=" sm:w-4/5 ">
+                <div class="three">
+                    <h1 style="color: #74C0FC;"><i class="fa-brands fa-flutter"></i> Flutter</h1>
+                    {{- $filteredPages := where (where .Site.RegularPages "Type" "in" (slice "posts" "videos"))
+                    ".Params.categories" "intersect" (slice "flutter") -}}
+                    {{- partial "components/project.html" (dict "pages" $filteredPages "context" .) -}}
+
+                    <div class="three">
+                        <h1 style="color: #6b73db;"><i class="fa-solid fa-code-branch"></i> Leetcode</h1>
+                    </div>
+                    {{- $filteredPages2 := where (where .Site.RegularPages "Type" "in" (slice "posts" "videos"))
+                    ".Params.categories" "intersect" (slice "Leetcode") -}}
+                    {{- partial "components/project.html" (dict "pages" $filteredPages2 "context" .) -}}
+
+                    <div class="three">
+                        <h1><i class="fa-solid fa-chalkboard"></i> Tutorial</h1>
+                    </div>
+                    {{- $filteredPages2 := where (where .Site.RegularPages "Type" "in" (slice "posts" "videos"))
+                    ".Params.categories" "intersect" (slice "Tutorial") -}}
+                    {{- partial "components/project.html" (dict "pages" $filteredPages2 "context" .) -}}
+
+
+                </div>
+
+            </div>
+            <div class=" sm:w-1/4">
+
+                <div class="mb-6"></div>
+
+                {{- partial "components/music_player.html" . -}}
+                <div class="mb-6"></div>
+
+                <div class="category-section">
+                    <div class="category-header">
+                        <h2 class="category-title">Categories</h2>
+                    </div>
+
+                    <div class="categoryTab " id="categoryTab">
+                        {{ range $key, $value := .Site.Taxonomies.categories }}
+                        <a target="_blank" class="brutalist-card brutalist-card__button--mark"
+                           href="/categories/{{ $key | urlize }}">{{ $key }}({{ len $value }})</a>
+                        {{ end }}
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{{ end }}
+

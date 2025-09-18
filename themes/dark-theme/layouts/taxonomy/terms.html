@@ -1,0 +1,42 @@
+{{- define "main" }}
+<section class="s:mt-10">
+    <div class="container sm:my-14 " style="    margin-top: 5em;">
+      
+        <div class="w-full sm:w-10 sm:mt-10">
+          {{.Content}}
+          <blockquote>
+            <p>一切烦恼都来自于人际关系。</p>&nbsp; &nbsp; 
+            <p>All troubles stem from interpersonal relationships.</p>
+            
+        </blockquote>
+          <div class="flex  flex-col sm:flex-row ">  
+            
+                <ul class="categories-ul">
+                  <h3>Categories</h3>
+                    {{ range $key, $value := .Site.Taxonomies.categories }}
+                      <li>
+                          <a target="_blank" class="category-li" href="/categories/{{ $key | urlize }}">{{ $key }}</a>
+                      </li>
+                  {{ end }}
+
+                  
+              </ul>
+            </div>
+            <div class="flex flex-col sm:flex-row ">  
+              
+              <ul class="tags-ul">
+                  <h3>Tags</h3>
+                  {{ range $key, $value := .Site.Taxonomies.tags }}
+                      <li>
+                          <a target="_blank" class="tag-li" href="/tags/{{ $key | urlize }}">{{ $key }} ({{ len $value }})</a>
+                      </li>
+                  {{ end }}
+              </ul>
+              
+            </div>
+     
+        </div>
+     
+    </div>
+  </section>
+{{- end }}

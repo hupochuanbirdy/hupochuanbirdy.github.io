@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Riverpod on tothemoon&#39;s blog</title>
+    <link>https://hupochuanbird.github.io/tags/riverpod/</link>
+    <description>Recent content in Riverpod on tothemoon&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Sun, 30 Apr 2023 13:47:34 +0100</lastBuildDate>
+    <atom:link href="https://hupochuanbird.github.io/tags/riverpod/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Customize search bar in Flutter</title>
+      <link>https://hupochuanbird.github.io/posts/customize-search-in-flutter/</link>
+      <pubDate>Sun, 30 Apr 2023 13:47:34 +0100</pubDate>
+      <guid>https://hupochuanbird.github.io/posts/customize-search-in-flutter/</guid>
+      <description>&lt;h2 id=&#34;whats-effect-we-can-realise&#34;&gt;What&amp;rsquo;s effect we can realise?&lt;/h2&gt;&#xA;&lt;div class=&#34;polaroid&#34; style=&#34;width:70%&#34; &gt;&#xA;   &lt;a data-fancybox=&#34;gallery&#34; data-src=&#34;https://i.328888.xyz/2023/04/30/iLiJxq.png&#34;&gt;&#xA;        &lt;img src=&#34;https://i.328888.xyz/2023/04/30/iLiJxq.png&#34;/&gt;&#xA;    &lt;/a&gt;&#xA;  &lt;div class=&#34;container&#34;&gt;&#xA;    &lt;p&gt; Custom search bar &lt;/p&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;The search bar can be used in any listview page,when user texts something in different page should list the correct outcome. &#xA;&lt;br&gt;&#xA;&lt;h2 id=&#34;customise-text-input&#34;&gt;Customise text input&lt;/h2&gt;&#xA;&lt;br&gt;&#xA;&lt;h3 id=&#34;-encapsulate-textformfield&#34;&gt;✨ Encapsulate TextFormField&lt;/h3&gt;&#xA;&lt;br&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://api.flutter.dev/flutter/material/TextFormField-class.html&#34;&gt;TextFormField&lt;/a&gt;&#xA;widget is used to take input from the user in flutter. This is a simple and easy user input widget in flutter.&lt;/p&gt;&#xA;&lt;p&gt;We can perform any operation on that user input data using TextFormField. You can use that user input, can send and show that input. You can store it into a TextEditingController type object.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

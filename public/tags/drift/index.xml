@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drift on tothemoon&#39;s blog</title>
+    <link>https://hupochuanbird.github.io/tags/drift/</link>
+    <description>Recent content in Drift on tothemoon&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Sat, 21 Jun 2025 16:11:45 +0100</lastBuildDate>
+    <atom:link href="https://hupochuanbird.github.io/tags/drift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building Offline-Ready Apps with Flutter Drift: My Experience</title>
+      <link>https://hupochuanbird.github.io/posts/flutter-drift-localdb/</link>
+      <pubDate>Sat, 21 Jun 2025 16:11:45 +0100</pubDate>
+      <guid>https://hupochuanbird.github.io/posts/flutter-drift-localdb/</guid>
+      <description>&lt;p&gt;has been long time didnt write any article, working hardly, code and system design&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Our clients hope the system can keep running offline—some areas have no network at all, and others have very unstable&#xA;connections. This requirement made us rethink our whole data storage approach for the project. We needed something&#xA;robust enough to handle offline reads and writes, and smart enough to sync changes whenever the network returns.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;After researching various options, we landed on Drift as our local database solution for Flutter. Drift (formerly known&#xA;as Moor) offers powerful features like type-safe queries, auto-updating streams, and easy schema migrations, making it a&#xA;great fit for apps that need to perform reliably—online and offline.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

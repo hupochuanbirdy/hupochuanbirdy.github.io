@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction on tothemoon&#39;s blog</title>
+    <link>https://hupochuanbird.github.io/tags/introduction/</link>
+    <description>Recent content in Introduction on tothemoon&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Tue, 07 Mar 2023 23:14:26 +0000</lastBuildDate>
+    <atom:link href="https://hupochuanbird.github.io/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo introduction</title>
+      <link>https://hupochuanbird.github.io/posts/hugo-introduction/</link>
+      <pubDate>Tue, 07 Mar 2023 23:14:26 +0000</pubDate>
+      <guid>https://hupochuanbird.github.io/posts/hugo-introduction/</guid>
+      <description>&lt;h2 id=&#34;hugo-introduction&#34;&gt;Hugo Introduction&lt;/h2&gt;&#xA;&lt;h3 id=&#34;basic-description&#34;&gt;Basic Description&lt;/h3&gt;&#xA;&lt;p&gt;Hugo is a popular open-source static site generator that allows you to create fast and efficient websites without relying on a database or server-side scripting. The structure of a Hugo site includes the following elements:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Content folder: This folder contains all the content of your website, including pages, blog posts, images, and other media. The content is typically written in Markdown, which is a lightweight markup language.&lt;/li&gt;&#xA;&lt;li&gt;Static folder: This folder contains all the static assets of your website, including CSS stylesheets, JavaScript files, images, and other media files. These assets are not generated dynamically and are instead served as-is.&lt;/li&gt;&#xA;&lt;li&gt;Archetypes folder: This folder contains templates for creating new content files. You can create templates for different types of content, such as blog posts or pages, to make it easy to create new content quickly.&lt;/li&gt;&#xA;&lt;li&gt;Themes folder: This folder contains all the templates, stylesheets, and other assets for your website&amp;rsquo;s theme. You can choose from a variety of pre-built themes or create your own.&lt;/li&gt;&#xA;&lt;li&gt;Config file: This file contains configuration settings for your Hugo site, such as the site title, language, and other global settings.&lt;/li&gt;&#xA;&lt;li&gt;Layouts folder: This folder contains templates for generating the HTML output of your website. You can create templates for different types of pages, such as the homepage, blog index, or individual blog posts.&lt;/li&gt;&#xA;&lt;li&gt;Data folder: This folder contains data files that are used to generate your website, such as site configuration settings, lists of authors or categories, or other metadata.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;polaroid&#34;&gt;&#xA; &lt;a&#xA;         data-fancybox=&#34;gallery&#34;&#xA;         data-src=&#34;https://i.328888.xyz/2023/03/15/JZSfx.png&#34;&gt;&#xA;        &lt;img src=&#34;https://i.328888.xyz/2023/03/15/JZSfx.png&#34;/&gt;&#xA;    &lt;/a&gt;&#xA;  &lt;div class=&#34;container&#34;&gt;&#xA;    &lt;p&gt;Project structure &lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

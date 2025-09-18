@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JPA on tothemoon&#39;s blog</title>
+    <link>https://hupochuanbird.github.io/categories/jpa/</link>
+    <description>Recent content in JPA on tothemoon&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Sat, 13 May 2023 20:14:29 +0100</lastBuildDate>
+    <atom:link href="https://hupochuanbird.github.io/categories/jpa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hibernate-FIX: Why request the initial POST/PUT API takes long time in Hibernate Springboot</title>
+      <link>https://hupochuanbird.github.io/posts/hibernate-initapi-slow/</link>
+      <pubDate>Sat, 13 May 2023 20:14:29 +0100</pubDate>
+      <guid>https://hupochuanbird.github.io/posts/hibernate-initapi-slow/</guid>
+      <description>&lt;h2 id=&#34;discover&#34;&gt;Discover&lt;/h2&gt;&#xA;&lt;p&gt;Our project is Springboot + hibernate, each time I deploy the project to the cloud(not only the cloud, but also in the local dev), the first POST/PUT API need long time to execute.&lt;/p&gt;&#xA;&lt;p&gt;We make several assumptions:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; DNS lookup&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; TCP Handshake and SSL Handshake&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; AWS RDS performance&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Code problem&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;assumption&#34;&gt;Assumption&lt;/h2&gt;&#xA;&lt;h3 id=&#34;assumption-1--dns--lookup&#34;&gt;Assumption 1 &amp;mdash; DNS  lookup&lt;/h3&gt;&#xA;&lt;p&gt;In Postman, obviously it&amp;rsquo;s an ideal time. So, move to the next.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,123 @@
+{{- define "main" }}
+
+    <section class="s:mt-10" id="about">
+        <div class="container">
+            <div class="w-full ">
+                <blockquote>
+                    <p>那些旧的伤疤会组成新的记忆，长出新的血肉，让我们更懂得如何爱身边的人。过去那些不够圆满的关系并没有走失，而是内化在了我们的生命里。
+                        未来，我会带着我们曾经的记忆，与身边的人再次愉快的共舞。</p>
+                </blockquote>
+            </div>
+            <div class="gallery-content">
+                <div class="gallery">
+                    {{ range $i, $img := .Params.images }}
+                        <input type="radio" name="gallery" id="img-{{ add $i 1 }}" {{ if eq $i 0 }}checked{{ end }}>
+                        <div class="gallery-image">
+                            <figure>
+                                <img src="{{ $img.src }}" alt="{{ $img.alt }}">
+                                <figcaption>
+                                    {{ with $img.caption }}{{ . }}{{ end }}
+                                    {{ with $img.credit }}<span class="credit">{{ . }}</span>{{ end }}
+                                </figcaption>
+                            </figure>
+                        </div>
+                    {{ end }}
+
+                    <div class="gallery-thumbnails">
+                        {{ range $i, $img := .Params.images }}
+                            <label for="img-{{ add $i 1 }}">
+                                <img src="{{ $img.src }}" alt="{{ $img.alt }}">
+                            </label>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .gallery-content {
+                    padding: 1rem;
+                    margin: 0 auto;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.06);
+                }
+                .gallery {
+                    position: relative;
+                    min-height: 400px;
+                }
+                .gallery input[type="radio"] {
+                    display: none;
+                }
+                .gallery-image {
+                    opacity: 0;
+                    position: absolute;
+                    top: 0; left: 0; width: 100%;
+                    transition: opacity 0.3s;
+                    z-index: 0;
+                    pointer-events: none;
+                    box-sizing: border-box;
+                }
+                .gallery input[type="radio"]:checked + .gallery-image {
+                    opacity: 1;
+                    position: relative;
+                    z-index: 1;
+                    pointer-events: auto;
+                }
+                .gallery-image figure {
+                    display: flex;
+                    align-items: flex-end;
+                    gap: 10px;
+                    margin: 0;
+                    width: 100%;
+
+                }
+                .gallery-image img {
+                    width: 80%;
+                    max-width: 100%;
+                    object-fit: contain;
+                    max-height: 500px;
+
+                }
+                .gallery-image figcaption {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 30%;
+                }
+                .gallery-image .credit {
+                    color: #888;
+                    margin-top: 8px;
+                    font-size: 0.98em;
+                }
+                .gallery-thumbnails {
+                    display: flex;
+                    gap: 5px;
+                    margin-top: 1rem;
+                }
+                .gallery-thumbnails label {
+                    cursor: pointer;
+                    border-radius: 4px;
+                    transition: box-shadow 0.2s, border 0.2s;
+                    border: 3px solid transparent;
+                }
+                .gallery-thumbnails img {
+                    width: 54px;
+                    height: 54px;
+                    object-fit: cover;
+                    border-radius: 4px;
+                    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.06);
+                }
+            </style>
+            {{/* Dynamic thumbnail border highlight per checked radio */}}
+            <style>
+                {{ range $i, $img := .Params.images }}
+                #img-{{ add $i 1 }}:checked ~ .gallery-thumbnails label[for="img-{{ add $i 1 }}"] {
+                    border-color: #3578e5;
+                    box-shadow: 0px 0px 0px 2px rgba(53,120,229,0.16);
+                }
+                {{ end }}
+            </style>
+
+        </div>
+    </section>
+
+{{- end }}

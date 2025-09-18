@@ -1,0 +1,14 @@
+# .DS_Store
+# .hugo_build.lock
+# .vscode/
+# archetypes/
+# config.toml
+# package-lock.json
+# package.json
+# # public/
+# themes/
+# data/
+# resources/
+# static/
+# assets/
+# layouts/
